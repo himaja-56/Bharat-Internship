@@ -1,0 +1,274 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+
+}
+body{
+    width:100%;
+    height:100%;
+    color:white;
+    background:black;
+
+}
+.container::before{
+    content:"";
+    background:url("Background.jpg") no-repeat center center/cover;
+    position:absolute;
+    height:100%;
+    width:100%;
+    opacity:0.3;
+    z-index:-1;
+}
+.container .navbar{
+    height: 100px;
+    display:flex;
+
+}
+.container .navbar .left{
+    height:100%;
+    display:flex;
+    float:left;
+}
+.container .navbar .left img{
+    height:100px;
+    position:absolute;
+    left:35px;
+}
+.container .navbar .right{
+    display:flex;
+    height:100px;
+    float:right;
+    position:absolute;
+    right:50%;
+
+
+}
+.container .navbar .right .language{
+    margin:auto;
+    align-items:center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 7px 10px;
+    color:white;
+    background: none;
+    cursor:pointer;
+    margin-right: 15px;
+
+}
+.container .navbar .right .language option{
+    background-color: gray;
+
+
+}
+.container .navbar .right button{
+    margin:auto;
+    align-items:center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 7px 17px;
+    background:#e50914;
+    cursor:pointer;
+    outline:none;
+    border-radius:8px;
+    border:none;
+}
+.container .navbar .right button a{
+    text-decoration: none;
+    color:white;
+}
+.container .title{
+    padding: 70px 45px;
+}
+.container .title .content{
+    width:950px;
+    margin:auto;
+    padding:75px 0;
+    text-align:center;
+
+}
+.container .title .content h1{
+    width:650px;
+    margin:auto;
+    font-size: 3.1rem;
+    text-align: center;
+}
+.container .title .content h2{
+    width:650px;
+    margin:auto;
+    font-size: 1.6rem;
+    text-align: center;
+
+}
+.container .title .content form h3{
+    margin:18px 0;
+    font-size: 1rem;
+    text-align: center;
+
+}
+.container .title .content form .email{
+    margin:auto;
+    width: 1000px;
+}
+.container .title .content form .email input{
+    height:60px;
+    width:450px;
+    margin:auto;
+    padding:20px;
+    font-size: 20px;
+    outline: none;
+}
+.container .title .content form .email button{
+    height:60px;
+    width:180px;
+    margin:auto;
+    align-items:center;
+    justify-content: center;
+    padding:7px 17px;
+    font-size: 20px;
+    background:#e50914;
+}
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0 ;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.accordion{
+    margin: 60px auto ;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label+.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+
+}
+
+.copyright-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
